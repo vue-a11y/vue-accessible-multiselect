@@ -1,0 +1,39 @@
+// v-multiselect__menu styles
+$v-multiselect-menu-position-top: 100% !default;
+
+// v-multiselect__arrow styles
+$v-multiselect-arrow-size: 8px !default;
+
+.v-multiselect {
+  &__inner {
+    position: relative;
+  }
+
+  &__menu {
+    position: absolute;
+    top: $v-multiselect-menu-position-top;
+    left: 0;
+    width: 100%;
+  }
+
+  &__list {
+    padding-left: 0;
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
+    list-style: none;
+    overflow: auto;
+  }
+  
+  &__arrow {
+    margin-left: auto;
+
+    svg {
+      display: inline-block;
+      width: $v-multiselect-arrow-size;
+      height: $v-multiselect-arrow-size;
+      vertical-align: middle;
+    }
+  }
+}

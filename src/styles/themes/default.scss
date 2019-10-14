@@ -1,0 +1,122 @@
+// v-multiselect__label styles
+$v-multiselect-label-display: inline-block !default;
+$v-multiselect-label-margin-bottom: 8px !default;
+$v-multiselect-label-font-size: 14px !default;
+
+// v-multiselect__prepend styles
+$v-multiselect-prepend-margin-right: 8px !default;
+
+// v-multiselect__btn styles
+$v-multiselect-btn-display: flex !default;
+$v-multiselect-btn-flex-align: center !default;
+$v-multiselect-btn-width: 100% !default;
+$v-multiselect-btn-height: 38px !default;
+$v-multiselect-btn-horizontal-padding: 16px !default;
+$v-multiselect-btn-vertical-padding: 0 !default;
+$v-multiselect-btn-border-width: 1px !default;
+$v-multiselect-btn-border-style: solid !default;
+$v-multiselect-btn-border-color: #ced4da !default;
+$v-multiselect-btn-border-radius: 4px !default;
+$v-multiselect-btn-background-color: #fff !default;
+$v-multiselect-btn-border-color-focus: #80bdff !default;
+$v-multiselect-btn-box-shadow-focus: 0 0 0 4px rgba(0, 128, 255, 0.24) !default;
+$v-multiselect-btn-font-size: 100% !default;
+
+// v-multiselect__selected styles
+$v-multiselect-selected-margin-right: 8px !default;
+
+// v-multiselect__menu styles
+$v-multiselect-menu-vertical-padding: 8px !default;
+$v-multiselect-menu-border-width: 1px !default;
+$v-multiselect-menu-border-style: solid !default;
+$v-multiselect-menu-border-color: rgba(0, 0, 0, 0.15) !default;
+$v-multiselect-menu-border-radius: 4px !default;
+$v-multiselect-menu-background-color: #fff !default;
+
+// v-multiselect__list styles
+$v-multiselect-list-max-height: 160px !default;
+
+// v-multiselect__option styles
+$v-multiselect-option-padding: 4px 16px !default;
+$v-multiselect-option-background-color-hover: #f8f9fa !default;
+$v-multiselect-option-background-color-focus: #f8f9fa !default;
+$v-multiselect-option-color-selected: #007bff !default;
+
+.v-multiselect {
+  $block: &;
+
+  &__label {
+    display: $v-multiselect-label-display;
+    margin-bottom: $v-multiselect-label-margin-bottom;
+    font-size: $v-multiselect-label-font-size;
+  }
+
+  &__prepend {
+    flex-shrink: 0;
+    margin-right: $v-multiselect-prepend-margin-right;
+  }
+
+  &__btn {
+    display: $v-multiselect-btn-display;
+    width: $v-multiselect-btn-width;
+    height: $v-multiselect-btn-height;
+    padding: $v-multiselect-btn-vertical-padding $v-multiselect-btn-horizontal-padding;
+    border: $v-multiselect-btn-border-width $v-multiselect-btn-border-style $v-multiselect-btn-border-color;
+    border-radius: $v-multiselect-btn-border-radius;
+    background-color: $v-multiselect-btn-background-color;
+    font-size: $v-multiselect-btn-font-size;
+
+    @if $v-multiselect-btn-display == flex {
+      align-items: $v-multiselect-btn-flex-align;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $v-multiselect-btn-border-color-focus;
+      box-shadow: $v-multiselect-btn-box-shadow-focus;
+    }
+  }
+
+  &__selected {
+    display: block;
+    overflow: hidden;
+    margin-right: $v-multiselect-selected-margin-right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__menu {
+    padding: {
+      top: $v-multiselect-menu-vertical-padding;
+      bottom: $v-multiselect-menu-vertical-padding;
+    }
+    border: $v-multiselect-menu-border-width $v-multiselect-menu-border-style $v-multiselect-menu-border-color;
+    border-radius: $v-multiselect-menu-border-radius;
+    background-color: $v-multiselect-menu-background-color;
+  }
+
+  &__list {
+    max-height: $v-multiselect-list-max-height;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  &__option {
+    padding: $v-multiselect-option-padding;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $v-multiselect-option-background-color-hover;
+    }
+
+    &--focus {
+      background-color: $v-multiselect-option-background-color-focus;
+    }
+
+    &--selected {
+      color: $v-multiselect-option-color-selected;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+const TYPE_AHEAD_TIMEOUT = 500
+
+export {
+  TYPE_AHEAD_TIMEOUT
+}
