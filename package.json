@@ -1,6 +1,6 @@
 {
   "name": "vue-accessible-multiselect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Vue.js component for accessible multiselects",
   "keywords": [
@@ -12,13 +12,13 @@
     "vue-multiselect",
     "vue-select"
   ],
-  "homepage": "https://github.com/andrewvasilchuk/vue-accessible-multiselect#readme",
+  "homepage": "https://github.com/vue-a11y/vue-accessible-multiselect#readme",
   "bugs": {
-    "url": "https://github.com/andrewvasilchuk/vue-accessible-multiselect/issues"
+    "url": "https://github.com/vue-a11y/vue-accessible-multiselect/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrewvasilchuk/vue-accessible-multiselect"
+    "url": "https://github.com/vue-a11y/vue-accessible-multiselect"
   },
   "license": "MIT",
   "author": "Andrew Vasilchuk <andrew.d.vasilchuk@gmail.com>",
