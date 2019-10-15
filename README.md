@@ -111,7 +111,7 @@ export default {
 }
 ```
 
-## Usage 
+## Usage
 
 ### Template
 
@@ -269,8 +269,8 @@ Here is some useful keys and their appropriate actions:
 - `Shift + Down Arrow` Moves focus to and toggles the selected state of the next option
 - `Shift + Up Arrow` Moves focus to and toggles the selected state of the previous option
 - `Shift + Space` Selects contiguous items from the most recently selected item to the focused item
-- `Control + Shift + Home` Selects the focused option and all options up to the first option. Moves focus t first option.
-- `Control + Shift + End` Selects the focused option and all options down to the last option. Moves focus t last option
+- `Control + Shift + Home` Selects the focused option and all options up to the first option. Moves focus to the first option.
+- `Control + Shift + End` Selects the focused option and all options down to the last option. Moves focus to the last option
 - `Control + A` Selects all options in the list. If all options are selected, unselects all options
 
 Type ahead:
