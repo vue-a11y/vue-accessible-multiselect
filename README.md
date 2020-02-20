@@ -186,10 +186,10 @@ Or already compiled `CSS`:
 
 ```css
 /* recommended */
-@import 'vue-accessible-multiselect/dist/styles/core.scss';
+@import 'vue-accessible-multiselect/dist/styles/core.css';
 
 /* optional */
-@import 'vue-accessible-multiselect/dist/styles/themes/default.scss';
+@import 'vue-accessible-multiselect/dist/styles/themes/default.css';
 ```
 
 > ⚠️ Note! When you import already compiled CSS you don't have ability to override `SASS` variables during build process, so it is preferable to use `.scss` file.
