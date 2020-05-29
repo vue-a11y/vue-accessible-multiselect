@@ -34,6 +34,9 @@
     "build:css": "node-sass ./src -o ./dist --output-style compressed -x",
     "dev": "rollup -c build/rollup.config.dev.js --watch",
     "postcss": "postcss ./dist/**/*.css -r --no-map",
+    "docs:dev": "./node_modules/.bin/vuepress dev docs --no-cache",
+    "docs:build": "./node_modules/.bin/vuepress build docs --no-cache && echo multiselect.vue-a11y.com >> docs/.vuepress/dist/CNAME",
+    "docs:publish": "gh-pages -d docs/.vuepress/dist",
     "test:unit": "jest"
   },
   "dependencies": {
@@ -46,6 +49,7 @@
     "autoprefixer": "^9.6.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^24.9.0",
+    "gh-pages": "^2.2.0",
     "jest": "^24.9.0",
     "lodash": "^4.17.15",
     "node-sass": "^4.12.0",
@@ -62,11 +66,14 @@
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-terser": "^5.1.2",
     "rollup-plugin-vue": "^5.0.1",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-jest": "^3.0.5",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.5.0",
+    "vuepress-theme-default-vue-a11y": "^0.1.10",
+    "watchpack": "^1.6.1"
   },
   "peerDependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   }
 }
