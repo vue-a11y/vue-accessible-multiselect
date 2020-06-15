@@ -72,10 +72,10 @@ Or already compiled `CSS`:
 
 ```css
 /* recommended */
-@import 'vue-accessible-multiselect/dist/styles/core.scss';
+@import 'vue-accessible-multiselect/dist/styles/core.css';
 
 /* optional */
-@import 'vue-accessible-multiselect/dist/styles/themes/default.scss';
+@import 'vue-accessible-multiselect/dist/styles/themes/default.css';
 ```
 
 ::: tip
