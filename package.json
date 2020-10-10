@@ -24,11 +24,13 @@
   "author": "Andrew Vasilchuk <andrew.d.vasilchuk@gmail.com>",
   "files": [
     "src",
-    "dist"
+    "dist",
+    "types/*.d.ts"
   ],
   "main": "dist/vue-accessible-multiselect.common.js",
   "unpkg": "dist/vue-accessible-multiselect.min.js",
   "module": "dist/vue-accessible-multiselect.esm.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "build": "rimraf dist/* && rollup -c build/rollup.config.prod.js && npm run build:css && npm run postcss",
     "build:css": "node-sass ./src -o ./dist --output-style compressed -x",
