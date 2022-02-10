@@ -52,7 +52,7 @@
     "gh-pages": "^2.2.0",
     "jest": "^24.9.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.18",
     "postcss-cli": "^6.1.3",
     "rimraf": "^3.0.0",
